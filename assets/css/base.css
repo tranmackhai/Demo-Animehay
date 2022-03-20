@@ -1,0 +1,23 @@
+:root {
+    --white-color: #fff;
+    --text-color: #bbb;
+    --black-color: #000;
+    --primary-color: #333;
+    --border-color: #444;
+    --header-height: 60px;
+}
+
+.bottom-gutters {
+    margin-bottom: 2px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}

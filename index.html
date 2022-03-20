@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="/assets/css/grid.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-free-5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Chibi-Animehay</title>
+</head>
+
+<body>
+    <div class="anime">
+        <header class="header">
+            <div class="grid wide">
+                <div class="navbar">
+                    <!-- Header with search -->
+                    <div class="header-with-search">
+                        <div class="header__logo">
+                            <a href="/" class="header__logo-link">
+                                <img src="/assets/img/logo.png" alt="" class="header__logo-img">
+                            </a>
+                        </div>
+                        <!-- Search -->
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Nhập từ khoá...">
+                                <div class="header__search-history">
+                                    <ul class="search__history-list">
+                                        <li class="search__history-item">
+                                            <a href="" class="search__history-link">Boku no hero</a>
+                                        </li>
+                                        <li class="search__history-item">
+                                            <a href="" class="search__history-link">Thanh gươm diệt quỷ</a>
+                                        </li>
+                                        <li class="search__history-item">
+                                            <a href="" class="search__history-link">Slime</a>
+                                        </li>
+                                        <li class="search__history-item">
+                                            <a href="" class="search__history-link">86</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="header__search-btn">
+                                <i class="header__search-icon fas fa-search"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="header__memu">
+                            <div class="header__menu-wrap drop__search-option">
+                                <a href="#" onclick="clickEventDropDown()" class="header__menu-link">
+                                    <span class="header__menu-icon"><i class="fas fa-bars drop-icon"></i></span>
+                                    <!-- <span class="header__menu-icon"><i class="far fa-times-circle drop-icon"></i> </span> -->
+                                </a>
+                            </div>
+                            <div class="header__menu-wrap">
+                                <a href="/history" class="header__menu-link">
+                                    <span class="header__menu-icon"><i class="fas fa-history"></i></span>
+                                </a>
+                            </div>
+                            <div class="header__menu-wrap">
+                                <a href="/follows" class="header__menu-link">
+                                    <span class="header__menu-icon"><i class="fas fa-bookmark"></i></span>
+                                </a>
+                            </div>
+                            <div class="header__menu-wrap drop__search-option">
+                                <a href="#" onclick="clickEventDropDown()" class="header__menu-link">
+                                    <span class="header__menu-icon"><i class="fas fa-user-circle drop-icon"></i></span>
+                                </a>
+                            </div>
+                            <div class="header__menu-wrap drop__search-option">
+                                <a href="#" onclick="clickEventDropDown()" class="header__menu-link">
+                                    <span class="header__menu-icon"><i class="far fa-bell drop-icon"></i></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__menu-search-option">
+                        <!-- Menu -->
+                        <div class="row header__menu-option">
+                            <a href="" class=" l-3 menu__option-heading  menu__option-heading-active">
+                                <span class="menu__option-icon">
+                                <i class="fas fa-shapes"></i>
+                            </span> Thể loại
+                            </a>
+                            <a href="" class="l-3 menu__option-heading">
+                                <span class="menu__option-icon">
+                                <i class="far fa-star"></i>
+                            </span> Năm
+                            </a>
+                            <a href="" class="l-3 menu__option-heading">
+                                <span class="menu__option-icon">
+                                <i class="fas fa-filter"></i>
+                            </span> Lọc phim
+                            </a>
+                            <a href="" class="l-3 menu__option-heading">
+                                <span class="menu__option-icon">
+                                <i class="far fa-star"></i>
+                            </span> Phim lẻ
+                            </a>
+                        </div>
+                        <div class="row menu__option-genre ">
+                            <a href="" class="l-2-4 option__genre-link">Anime</a>
+                            <a href="" class="l-2-4 option__genre-link">Hành động</a>
+                            <a href="" class="l-2-4 option__genre-link">Hài hước</a>
+                            <a href="" class="l-2-4 option__genre-link">Tình cảm</a>
+                            <a href="" class="l-2-4 option__genre-link">Harem</a>
+                            <a href="" class="l-2-4 option__genre-link">Bí ẩn</a>
+                            <a href="" class="l-2-4 option__genre-link">Bi kịch</a>
+                            <a href="" class="l-2-4 option__genre-link">Giả tưởng</a>
+                            <a href="" class="l-2-4 option__genre-link">Học đường</a>
+                            <a href="" class="l-2-4 option__genre-link">Đời thường</a>
+                            <a href="" class="l-2-4 option__genre-link">Anime</a>
+                            <a href="" class="l-2-4 option__genre-link">Hành động</a>
+                            <a href="" class="l-2-4 option__genre-link">Hài hước</a>
+                            <a href="" class="l-2-4 option__genre-link">Tình cảm</a>
+                            <a href="" class="l-2-4 option__genre-link">Harem</a>
+                            <a href="" class="l-2-4 option__genre-link">Bí ẩn</a>
+                            <a href="" class="l-2-4 option__genre-link">Bi kịch</a>
+                            <a href="" class="l-2-4 option__genre-link">Giả tưởng</a>
+                            <a href="" class="l-2-4 option__genre-link">Học đường</a>
+                            <a href="" class="l-2-4 option__genre-link">Đời thường</a>
+                            <a href="" class="l-2-4 option__genre-link">Anime</a>
+                            <a href="" class="l-2-4 option__genre-link">Hành động</a>
+                            <a href="" class="l-2-4 option__genre-link">Hài hước</a>
+                            <a href="" class="l-2-4 option__genre-link">Tình cảm</a>
+                            <a href="" class="l-2-4 option__genre-link">Harem</a>
+                            <a href="" class="l-2-4 option__genre-link">Bí ẩn</a>
+                            <a href="" class="l-2-4 option__genre-link">Bi kịch</a>
+                            <a href="" class="l-2-4 option__genre-link">Giả tưởng</a>
+                            <a href="" class="l-2-4 option__genre-link">Học đường</a>
+                            <a href="" class="l-2-4 option__genre-link">Đời thường</a>
+                            <a href="" class="l-2-4 option__genre-link">Anime</a>
+                            <a href="" class="l-2-4 option__genre-link">Hành động</a>
+                            <a href="" class="l-2-4 option__genre-link">Hài hước</a>
+                            <a href="" class="l-2-4 option__genre-link">Tình cảm</a>
+                            <a href="" class="l-2-4 option__genre-link">Harem</a>
+                            <a href="" class="l-2-4 option__genre-link">Bí ẩn</a>
+                            <a href="" class="l-2-4 option__genre-link">Bi kịch</a>
+                            <a href="" class="l-2-4 option__genre-link">Giả tưởng</a>
+                            <a href="" class="l-2-4 option__genre-link">Học đường</a>
+                            <a href="" class="l-2-4 option__genre-link">Đời thường</a>
+                            <a href="" class="l-2-4 option__genre-link">Anime</a>
+                            <a href="" class="l-2-4 option__genre-link">Hành động</a>
+                            <a href="" class="l-2-4 option__genre-link">Hài hước</a>
+                            <a href="" class="l-2-4 option__genre-link">Tình cảm</a>
+                            <a href="" class="l-2-4 option__genre-link">Harem</a>
+                            <a href="" class="l-2-4 option__genre-link">Bí ẩn</a>
+                            <a href="" class="l-2-4 option__genre-link">Bi kịch</a>
+                            <a href="" class="l-2-4 option__genre-link">Giả tưởng</a>
+                            <a href="" class="l-2-4 option__genre-link">Học đường</a>
+                            <a href="" class="l-2-4 option__genre-link">Đời thường</a>
+                        </div>
+                    </div>
+                    <!-- Account -->
+                    <div class="header__account-dropdown">
+                        <div class="account__dropdown-user">
+                            <div class="account__dropdown-avatar">
+                                <img class="account__dropdown-avatar-img" src="/assets/img/avt.jpg" alt="">
+                            </div>
+                            <div class="account__dropdown-name">
+                                <div>Trần Mặc Khải</div>
+                            </div>
+                        </div>
+                        <ul class="account__dropdown-list">
+                            <li class="account__dropdown-item">
+                                <span class="account__dropdown-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </span>
+                                <a href="" class="account__dropdown-link">Đồng bộ</a>
+                            </li>
+                            <li class="account__dropdown-item">
+                                <span class="account__dropdown-icon">
+                                <i class="far fa-user-circle"></i>
+                            </span>
+                                <a href="" class="account__dropdown-link">Thông tin</a>
+                            </li>
+                            <li class="account__dropdown-item">
+                                <span class="account__dropdown-icon">
+                                <i class="fas fa-key"></i>
+                            </span>
+                                <a href="" class="account__dropdown-link">Thay đổi mật khẩu</a>
+                            </li>
+                            <li class="account__dropdown-item">
+                                <span class="account__dropdown-icon">
+                                <i class="fas fa-sign-out-alt"></i>
+                            </span>
+                                <a href="" class="account__dropdown-link">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Notification -->
+                    <div class="header__notification-dropdown">
+                        <div class="notification__dropdown-header">
+                            <div class="notification__dropdown-heading">
+                                <h1>Thông Báo</h1>
+                            </div>
+                            <div class="notification__dropdown-global">
+                                <a href="" class="notification__dropdown-global-link">Xem tất cả</a>
+                            </div>
+                        </div>
+                        <div class="notification__dropdown-list scroll-bar">
+                            <div class="notification__dropdown-new">
+                                <div class="notification__dropdown-new-heading">Mới</div>
+                                <div class="notification__dropdown-comment">
+                                    <div class="notification__dropdown-avatar">
+                                        <img class="notification__dropdown-img" src="/assets/img/exp.png" alt="">
+                                    </div>
+                                    <div class="notification__dropdown-infor">
+                                        <div class="notification__dropdown-name">Tin nhắn từ hệ thống</div>
+                                        <div class="notification__dropdown-description">"Bạn nhận được 2xp"</div>
+                                        <div class="notification__dropdown-time">11h trước</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notification__dropdown-before">
+                                <div class="notification__dropdown-before-heading">Trước đó</div>
+                                <div class="notification__dropdown-comment">
+                                    <div class="notification__dropdown-avatar">
+                                        <img class="notification__dropdown-img" src="/assets/img/exp.png" alt="">
+                                    </div>
+                                    <div class="notification__dropdown-infor">
+                                        <div class="notification__dropdown-name">Tin nhắn từ hệ thống</div>
+                                        <div class="notification__dropdown-description">"Bạn nhận được 2xp"</div>
+                                        <div class="notification__dropdown-time">11h trước</div>
+                                    </div>
+                                </div>
+                                <div class="notification__dropdown-comment">
+                                    <div class="notification__dropdown-avatar">
+                                        <img class="notification__dropdown-img" src="https://animehay.club/upload/poster/2420-1634690047.jpg" alt="">
+                                    </div>
+                                    <div class="notification__dropdown-infor">
+                                        <div class="notification__dropdown-name">Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru</div>
+                                        <div class="notification__dropdown-description">"Đã phát sóng tập 10"</div>
+                                        <div class="notification__dropdown-time">11h trước || Phim bạn theo dõi</div>
+                                    </div>
+                                </div>
+                                <div class="notification__dropdown-comment">
+                                    <div class="notification__dropdown-avatar">
+                                        <img class="notification__dropdown-img" src="https://animehay.club/upload/poster/3350-1633142975.jpg" alt="">
+                                    </div>
+                                    <div class="notification__dropdown-infor">
+                                        <div class="notification__dropdown-name">Takt Op. Destiny</div>
+                                        <div class="notification__dropdown-description">"Đã phát sóng tập 10"</div>
+                                        <div class="notification__dropdown-time">11h trước || Phim bạn theo dõi</div>
+                                    </div>
+                                </div>
+                                <div class="notification__dropdown-comment">
+                                    <div class="notification__dropdown-avatar">
+                                        <img class="notification__dropdown-img" src="/assets/img/exp.png" alt="">
+                                    </div>
+                                    <div class="notification__dropdown-infor">
+                                        <div class="notification__dropdown-name">Tin nhắn từ hệ thống</div>
+                                        <div class="notification__dropdown-description">"Bạn nhận được 2xp"</div>
+                                        <div class="notification__dropdown-time">11h trước</div>
+                                    </div>
+                                </div>
+                                <div class="notification__dropdown-comment">
+                                    <div class="notification__dropdown-avatar">
+                                        <img class="notification__dropdown-img" src="https://animehay.club//upload/poster/3335.jpg" alt="">
+                                    </div>
+                                    <div class="notification__dropdown-infor">
+                                        <div class="notification__dropdown-name">86 (Eighty Six) 2nd Season</div>
+                                        <div class="notification__dropdown-description">"Đã phát sóng tập 8"</div>
+                                        <div class="notification__dropdown-time">5 ngày trước || Phim bạn theo dõi</div>
+                                    </div>
+                                </div>
+                                <div class="notification__dropdown-comment">
+                                    <div class="notification__dropdown-avatar">
+                                        <img class="notification__dropdown-img" src="https://animehay.club/upload/poster/34.jpg" alt="">
+                                    </div>
+                                    <div class="notification__dropdown-infor">
+                                        <div class="notification__dropdown-name">One Piece</div>
+                                        <div class="notification__dropdown-description">"Đã phát sóng tập 1002"</div>
+                                        <div class="notification__dropdown-time">6 ngày trước || Phim bạn theo dõi</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="anime__container">
+            <div class="grid wide">
+                <div class="anime__content">
+                    <div class="anime__carousel">
+                        <div class="carousel__header">
+                            <div class="carousel__heading">
+                                Phim đề cử
+                            </div>
+                        </div>
+                        <div class="anime__carousel-list owl-carousel owl-theme">
+                            <a href="#" class="carousel-item item">
+                                <img class="carousel-item-img" src="https://animehay.club/upload/poster/34.jpg" alt="">
+                                <h4 class="carousel-item-name">
+                                    Onepiece
+                                </h4>
+                                <div class="carousel-item-episode">
+                                    <span>1003/?</span>
+                                </div>
+                            </a>
+                            <a href="#" class="carousel-item item">
+                                <img class="carousel-item-img" src="https://animehay.club/upload/poster/3353-1633233301.jpg" alt="">
+                                <h4 class="carousel-item-name">
+                                    Sekai Saikou no Ansatsusha, Isekai Kizoku ni Tensei suru
+                                </h4>
+                                <div class="carousel-item-episode">
+                                    <span>10/12</span>
+                                </div>
+                            </a>
+                            <a href="#" class="carousel-item item">
+                                <img class="carousel-item-img" src="https://animehay.club/upload/poster/3350-1633142975.jpg" alt="">
+                                <h4 class="carousel-item-name">
+                                    Takt Op. Destiny
+                                </h4>
+                                <div class="carousel-item-episode">
+                                    <span>10/?</span>
+                                </div>
+                            </a>
+                            <a href="#" class="carousel-item item">
+                                <img class="carousel-item-img" src="https://animehay.club//upload/poster/3387.jpg" alt="">
+                                <h4 class="carousel-item-name">
+                                    Kimetsu no Yaiba: Yuukaku-hen
+                                </h4>
+                                <div class="carousel-item-episode">
+                                    <span>1/?</span>
+                                </div>
+                            </a>
+                            <a href="#" class="carousel-item item">
+                                <img class="carousel-item-img" src="https://animehay.club/upload/poster/3374.jpg" alt="">
+                                <h4 class="carousel-item-name">
+                                    Đấu Phá Thương Khung: Ước Hẹn Ba Năm
+                                </h4>
+                                <div class="carousel-item-episode">
+                                    <span>8/13</span>
+                                </div>
+                            </a>
+                            <a href="#" class="carousel-item item">
+                                <img class="carousel-item-img" src="https://animehay.club//upload/poster/3335.jpg" alt="">
+                                <h4 class="carousel-item-name">
+                                    86 (Eighty Six) 2nd Season
+                                </h4>
+                                <div class="carousel-item-episode">
+                                    <span>9-HOÃN/12</span>
+                                </div>
+                            </a>
+                            <a href="#" class="carousel-item item">
+                                <img class="carousel-item-img" src="https://animehay.club/upload/poster/2451.png" alt="">
+                                <h4 class="carousel-item-name">
+                                    Đấu La Đại Lục
+                                </h4>
+                                <div class="carousel-item-episode">
+                                    <span>186/250</span>
+                                </div>
+                            </a>
+                            <a href="#" class="carousel-item item">
+                                <img class="carousel-item-img" src="https://animehay.club//upload/poster/3362.jpg" alt="">
+                                <h4 class="carousel-item-name">
+                                    World Trigger Season 3
+                                </h4>
+                                <div class="carousel-item-episode">
+                                    <span>10/?</span>
+                                </div>
+                            </a>
+                            <a href="#" class="carousel-item item">
+                                <img class="carousel-item-img" src="https://animehay.club/upload/poster/3247-1637691191.jpg" alt="">
+                                <h4 class="carousel-item-name">
+                                    Thế Giới Hoàn Mỹ
+                                </h4>
+                                <div class="carousel-item-episode">
+                                    <span>36/78</span>
+                                </div>
+                            </a>
+                            <a href="#" class="carousel-item item">
+                                <img class="carousel-item-img" src="https://animehay.club//upload/poster/3338.jpg" alt="">
+                                <h4 class="carousel-item-name">
+                                    Mushoku Tensei: Isekai Ittara Honki Dasu 2nd Season
+                                </h4>
+                                <div class="carousel-item-episode">
+                                    <span>10/12</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="anime__update">
+                        <div class="update__header">
+                            <div class="update__heading">
+                                Mới cập nhật
+                            </div>
+                            <div class="update__genre">
+                                <a href="#" class="update__genre-anime">
+                                    <span>Anime</span>
+                                </a>
+                                <a href="#" class="update__genre-cna">
+                                    <span>CNA</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="update__content">
+                            <div class="update-list row no-gutters">
+                                <div class="update-list-item bottom-gutters sm-gutter col l-2-4">
+                                    <a class="update-list-item-link" href="">
+                                        <img src="https://animehay.club/upload/poster/3350-1633142975.jpg" alt="" class="update-item-img">
+                                        <div class="update-item-name">
+                                            <span>Takt Op. Destiny</span>
+                                        </div>
+                                        <div class="update-item-espisode">
+                                            <span>11/?</span>
+                                        </div>
+                                        <div class="update-item-follow">
+                                            <span><i class="far fa-star"></i></span>
+                                        </div>
+                                        <div class="update-item-score">
+                                            <span>9.5</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="update-list-item bottom-gutters col l-2-4">
+                                    <a href="" class="update-list-item-link">
+                                        <img src="https://animehay.club//upload/poster/3387.jpg" alt="" class="update-item-img">
+                                        <div class="update-item-name">
+                                            <span>Kimetsu no Yaiba: Yuukaku-hen</span>
+                                        </div>
+                                        <div class="update-item-espisode">
+                                            <span>2/?</span>
+                                        </div>
+                                        <div class="update-item-follow">
+                                            <span><i class="far fa-star"></i></span>
+                                        </div>
+                                        <div class="update-item-score">
+                                            <span>9.7</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="update-list-item bottom-gutters col l-2-4">
+                                    <a href="" class="update-list-item-link">
+                                        <img src="https://animehay.club//upload/poster/3338.jpg" alt="" class="update-item-img">
+                                        <div class="update-item-name">
+                                            <span>Mushoku Tensei: Isekai Ittara Honki Dasu 2nd Season</span>
+                                        </div>
+                                        <div class="update-item-espisode">
+                                            <span>11/?</span>
+                                        </div>
+                                        <div class="update-item-follow">
+                                            <span><i class="far fa-star"></i></span>
+                                        </div>
+                                        <div class="update-item-score">
+                                            <span>9.3</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="update-list-item bottom-gutters col l-2-4">
+                                    <a href="" class="update-list-item-link">
+                                        <img src="https://animehay.club/upload/poster/3374.jpg" alt="" class="update-item-img">
+                                        <div class="update-item-name">
+                                            <span>Đấu Phá Thương Khung: Ước Hẹn Ba Năm</span>
+                                        </div>
+                                        <div class="update-item-espisode">
+                                            <span>8/13</span>
+                                        </div>
+                                        <div class="update-item-follow">
+                                            <span><i class="far fa-star"></i></span>
+                                        </div>
+                                        <div class="update-item-score">
+                                            <span>9.8</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="update-list-item bottom-gutters col l-2-4">
+                                    <a href="" class="update-list-item-link">
+                                        <img src="https://animehay.club//upload/poster/3362.jpg" alt="" class="update-item-img">
+                                        <div class="update-item-name">
+                                            <span>World Trigger 3rd Season</span>
+                                        </div>
+                                        <div class="update-item-espisode">
+                                            <span>10/?</span>
+                                        </div>
+                                        <div class="update-item-follow">
+                                            <span><i class="far fa-star"></i></span>
+                                        </div>
+                                        <div class="update-item-score">
+                                            <span>9.8</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="update-list-item bottom-gutters col l-2-4">
+                                    <a href="" class="update-list-item-link">
+                                        <img src="https://animehay.club/upload/poster/34.jpg" alt="" class="update-item-img">
+                                        <div class="update-item-name">
+                                            <span>One Piece</span>
+                                        </div>
+                                        <div class="update-item-espisode">
+                                            <span>1002/?</span>
+                                        </div>
+                                        <div class="update-item-follow">
+                                            <span><i class="far fa-star"></i></span>
+                                        </div>
+                                        <div class="update-item-score">
+                                            <span>9.0</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="update-list-item bottom-gutters col l-2-4">
+                                    <a href="" class="update-list-item-link">
+                                        <img src="https://animehay.club//upload/poster/3335.jpg" alt="" class="update-item-img">
+                                        <div class="update-item-name">
+                                            <span>86 (Eighty Six) 2nd Season</span>
+                                        </div>
+                                        <div class="update-item-espisode">
+                                            <span>9-HOÃN/12</span>
+                                        </div>
+                                        <div class="update-item-follow">
+                                            <span><i class="far fa-star"></i></span>
+                                        </div>
+                                        <div class="update-item-score">
+                                            <span>9.7</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="update-list-item bottom-gutters col l-2-4">
+                                    <a href="" class="update-list-item-link">
+                                        <img src="https://animehay.club//upload/poster/3361.jpg" alt="" class="update-item-img">
+                                        <div class="update-item-name">
+                                            <span>Saihate no Paladin</span>
+                                        </div>
+                                        <div class="update-item-espisode">
+                                            <span>9/?</span>
+                                        </div>
+                                        <div class="update-item-follow">
+                                            <span><i class="far fa-star"></i></span>
+                                        </div>
+                                        <div class="update-item-score">
+                                            <span>9.3</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="update-list-item bottom-gutters col l-2-4">
+                                    <a href="" class="update-list-item-link">
+                                        <img src="https://animehay.club/upload/poster/2451.png" alt="" class="update-item-img">
+                                        <div class="update-item-name">
+                                            <span>Đấu La Đại Lục</span>
+                                        </div>
+                                        <div class="update-item-espisode">
+                                            <span>186/250</span>
+                                        </div>
+                                        <div class="update-item-follow">
+                                            <span><i class="far fa-star"></i></span>
+                                        </div>
+                                        <div class="update-item-score">
+                                            <span>9.3</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="update-list-item bottom-gutters col l-2-4">
+                                    <a href="" class="update-list-item-link">
+                                        <img src="https://animehay.club/upload/poster/3285.jpg" alt="" class="update-item-img">
+                                        <div class="update-item-name">
+                                            <span>Tsuki ga Michibiku Isekai Douchuu</span>
+                                        </div>
+                                        <div class="update-item-espisode">
+                                            <span>12/12</span>
+                                        </div>
+                                        <div class="update-item-follow">
+                                            <span><i class="far fa-star"></i></span>
+                                        </div>
+                                        <div class="update-item-score">
+                                            <span>9.7</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anime__pagination">
+                        <div class="pagination-list">
+                            <a href="" class="pagination-list-link">Đầu</a>
+                            <a href="" class="pagination-list-link pagination-link-active">1</a>
+                            <a href="" class="pagination-list-link">2</a>
+                            <a href="" class="pagination-list-link pagination-link-next">Go</a>
+                            <a href="" class="pagination-list-link">Cuối</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <div class="anime-footer grid wide">
+                <div class="footer__logo">
+                    <img class="footer__logo-img" src="https://animehay.club/themes/img/logo-footer.png?v=1.1.8" alt="">
+                </div>
+                <a href="" class="footer__advertisement">
+                    <img class="footer_advertisement-img" src="assets/img/AlQKvFW.png" alt="">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
